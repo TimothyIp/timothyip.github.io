@@ -262,7 +262,7 @@ span {
           animation-fill-mode: both; }
 
 .intro__container p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 200;
   opacity: 0;
   letter-spacing: 6.5px;
@@ -444,13 +444,15 @@ span {
   background-size: cover;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 37.5rem;
-          flex: 1 1 37.5rem; }
+          flex: 1 1 37.5rem;
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7); }
 
 .about__info {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 10rem;
           flex: 1 1 10rem;
-  margin-left: 4.3125rem;
+  margin-left: 7.9375rem;
   position: relative; }
 
 .about__info h2 {
@@ -459,16 +461,32 @@ span {
   position: absolute;
   margin: 0;
   left: -20%;
+  bottom: 25%;
   font-size: 2.25rem;
   letter-spacing: 7px;
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 1.875rem;
-  border-bottom: 4px solid #c6aa82; }
+  border-bottom: 2.5px solid #c6aa82; }
 
 .about__info p {
   margin-left: 5rem;
-  font-size: 0.8125rem;
-  color: #a8a8a8; }
+  font-size: 1rem;
+  color: #606060;
+  position: absolute;
+  top: 60%;
+  font-weight: 300;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  line-height: 21px; }
+
+.signature {
+  text-align: right;
+  padding-top: 4.6875rem; }
+
+#portfolio {
+  padding-top: 5.625rem;
+  background-color: #fff;
+  height: 100%; }
 
 html, body {
   height: 100%;

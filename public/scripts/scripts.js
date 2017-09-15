@@ -27,11 +27,9 @@ app.introAnim = function () {
 		$(".intro__container p").addClass("fadeIn");
 	}, 3500);
 	setTimeout(function () {
-		$("video").bind('ended', function () {
-			$(this).fadeOut();
-			$("#intro").addClass("fadeIn").css("background", "linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('/public/assets/2212.jpeg')");
-		});
-	}, 1650);
+		$("video").fadeOut();
+		$("#intro").addClass("fadeIn").css("background", "linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('/public/assets/2212.jpeg')");
+	}, 13650);
 };
 
 app.init = function () {

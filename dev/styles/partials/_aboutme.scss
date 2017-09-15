@@ -19,11 +19,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     flex: 1 1 37.5rem;
+    filter: opacity(0.7);
 }
 
 .about__info {
    flex: 1 1 10rem;
-   margin-left: 4.3125rem;
+   margin-left: 7.9375rem;
    position: relative;
 }
 
@@ -32,16 +33,27 @@
     position: absolute;
     margin: 0;
     left: -20%;
+    bottom: 25%;
     font-size: 2.25rem;
     letter-spacing: 7px;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 1.875rem;
-    border-bottom: 4px solid #c6aa82;
+    border-bottom: 2.5px solid #c6aa82;
 }
 
 .about__info p {
     margin-left: 5rem;
-    font-size: 0.8125rem;
-    color: #a8a8a8;
+    font-size: 1rem;
+    color: #606060;
+    position: absolute;
+    top: 60%;
+    font-weight: 300;
+    transform: translateY(-50%);
+    line-height: 21px;
+}
+
+.signature {
+    text-align: right;
+    padding-top: 4.6875rem;
 }
 
