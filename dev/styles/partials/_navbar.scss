@@ -1,0 +1,59 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 300;
+    color: #fff;
+    padding-top: 1.75rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.navbar .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container {
+  display          : flex; 
+  align-items      : center;
+}
+span {
+  padding-left     : 20px;
+  font-family      : Helvetica;
+  font-weight      : bold;
+  font-size        : 22px;
+  letter-spacing   : 2px;
+}
+
+.menu {
+  height           : 32px;
+  width            : 50px;
+  padding-left: 1.125rem;
+}
+
+.bar {
+  background-color : #fff;
+  height           : 1px;
+  width            : 30px;
+  transition       : all .25s;
+  position         : relative;
+}
+.one { top         : 10px; }
+.two { top         : 20px; }
+.whopper:hover .one, .whopper:hover .two {
+  background-color : gray;
+}
+.one-ani {
+  transform        : rotate(45deg);
+  top              : 16px;
+  transition       : all .25s;
+}
+.two-ani {
+  transform        : rotate(-45deg);
+  top              : 15px;
+  transition       : all .25s;
+}

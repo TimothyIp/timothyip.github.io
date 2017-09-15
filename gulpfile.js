@@ -28,16 +28,16 @@ gulp.task('scripts', () => {
    }))
 });
 
-gulp.task('html', () => {
-  return gulp.src('./dev/*.html')
-   .pipe(gulp.dest('./public/'))
-   .pipe(browserSync.reload({
-    stream: true
-   }))
-});
+// gulp.task('html', () => {
+//   return gulp.src('*.html')
+//    .pipe(gulp.dest('./public/'))
+//    .pipe(browserSync.reload({
+//     stream: true
+//    }))
+// });
 
 gulp.task('watch',["browserSync", "styles"], () => {
-  gulp.watch("./dev/*.html", ["html"], browserSync.reload);
+  gulp.watch("*.html", browserSync.reload);
   gulp.watch("./dev/styles/**/*.scss", ['styles']);
   gulp.watch("./dev/scripts/*.js", ['scripts'], browserSync.reload);
 });
@@ -46,7 +46,7 @@ gulp.task('browserSync', function() {
   browserSync.init({
     port: 8383,
     server: {
-      baseDir: 'public'
+      baseDir: '.'
     },
     ui: {
       port:8181

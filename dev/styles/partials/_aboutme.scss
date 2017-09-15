@@ -1,0 +1,47 @@
+#about__me {
+    background-color: #fff;
+    padding-top: 5.625rem;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.parallax {
+    background-image: url("/public/assets/bio_pic2.jpg");
+    height: 270px;
+    width: 600px;
+    max-width: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 1 37.5rem;
+}
+
+.about__info {
+   flex: 1 1 10rem;
+   margin-left: 4.3125rem;
+   position: relative;
+}
+
+.about__info h2 {
+    transform: rotate(-90deg);
+    position: absolute;
+    margin: 0;
+    left: -20%;
+    font-size: 2.25rem;
+    letter-spacing: 7px;
+    font-weight: 500;
+    padding-bottom: 1.875rem;
+    border-bottom: 4px solid #c6aa82;
+}
+
+.about__info p {
+    margin-left: 5rem;
+    font-size: 0.8125rem;
+    color: #a8a8a8;
+}
+
