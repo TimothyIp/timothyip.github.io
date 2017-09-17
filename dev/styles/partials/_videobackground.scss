@@ -19,6 +19,7 @@
     min-height: 100%;
     z-index: -1;
     transform: all 0.2s ease-out;
+    transition: opacity 0.2s ease-in;
     // filter: grayscale(100%);
   }
   

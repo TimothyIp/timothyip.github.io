@@ -1,13 +1,15 @@
 @import "partials/normalize";
+@import "partials/colors";
 @import "partials/navbar";
 @import "partials/introduction";
 @import "partials/videobackground";
 @import "partials/aboutme";
 @import "partials/portfolio";
+@import "partials/skills";
+@import "partials/blog";
+@import "partials/contact";
 
 // REMOVE UNUSED FONT-WEIGHT
-
-$accent-color: #c6aa82;
 
 html, body {
 	height: 100%;

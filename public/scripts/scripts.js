@@ -27,9 +27,10 @@ app.introAnim = function () {
 		$(".intro__container p").addClass("fadeIn");
 	}, 3500);
 	setTimeout(function () {
-		$("video").fadeOut();
-		$("#intro").addClass("fadeIn").css("background", "linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('/public/assets/2212.jpeg')");
-	}, 13650);
+		// $("video").fadeOut("slow");
+		$("video").css("opacity", 0);
+		$("#intro").fadeIn("slow").css("background", "linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('/public/assets/2212.jpeg')");
+	}, 13600);
 };
 
 app.init = function () {
@@ -38,6 +39,7 @@ app.init = function () {
 };
 
 $(function () {
+	// app.googleMaps();
 	app.init();
 	setTimeout(function () {
 		$(".loading__container").fadeOut("slow");

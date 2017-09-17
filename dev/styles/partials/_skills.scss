@@ -1,0 +1,46 @@
+#skills {
+    background-color: #fff;
+    padding-top: 10rem;
+}
+
+.skills__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skills__intro {
+    width: 100%;
+    margin-bottom: 3.75rem;
+    text-align: center;
+}
+
+.skills__intro h1 {
+    text-align: center;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid $accent-color;
+    padding-bottom: 1.375rem;
+}
+
+.skill__icons {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: $off-gray;
+}
+
+.skill__icons:hover i {
+    color: $accent-color;
+}
+
+.skill__icons i {
+    font-size: 4rem;
+}
+
+.skill__icons p {
+    padding-top: 1rem;
+}
