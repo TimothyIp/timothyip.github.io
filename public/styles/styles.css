@@ -390,10 +390,6 @@ span {
 .icons i {
   padding-right: 0.875rem; }
 
-.test {
-  background-color: #fff;
-  height: 600px; }
-
 .fullscreen-bg {
   position: relative;
   top: 0;
@@ -421,7 +417,7 @@ span {
 
 #about__me {
   background-color: #fff;
-  padding-top: 5.625rem; }
+  padding-top: 8rem; }
 
 .about__container {
   display: -webkit-box;
@@ -447,7 +443,9 @@ span {
       -ms-flex: 1 1 37.5rem;
           flex: 1 1 37.5rem;
   -webkit-filter: opacity(0.7);
-          filter: opacity(0.7); }
+          filter: opacity(0.7);
+  -webkit-box-shadow: inset 0px 4px 11px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 4px 11px 2px rgba(0, 0, 0, 0.75); }
 
 .about__info {
   -webkit-box-flex: 1;
@@ -483,7 +481,7 @@ span {
 
 .signature {
   text-align: right;
-  padding-top: 4.6875rem; }
+  padding-top: 8.6875rem; }
 
 #portfolio {
   background-color: #fff;
@@ -493,7 +491,7 @@ span {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 3.75rem; }
+  padding-bottom: 5rem; }
 
 .portfolio__intro h1 {
   display: inline-block;
@@ -513,10 +511,19 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  position: relative; }
+  position: relative;
+  padding-bottom: 4.5rem; }
 
-.portfolio__piece img {
-  max-width: 100%; }
+.portfolio__image {
+  width: 50%; }
+
+.portfolio__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: 0; }
 
 .portfolio__info {
   display: -webkit-box;
@@ -531,7 +538,14 @@ span {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 50%; }
+
+.portfolio__info p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.4rem;
+  padding-bottom: 2rem; }
 
 .port_divider {
   -webkit-transform: rotate(-90deg);
@@ -545,6 +559,70 @@ span {
 
 .portfolio__header {
   text-align: center; }
+
+.portfolio__header p {
+  font-weight: 100;
+  font-size: 1.25rem;
+  padding-bottom: 1.5rem; }
+
+.portfolio__header h2 {
+  font-weight: 200;
+  font-size: 1.9rem;
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem; }
+
+.project__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.project__tags p {
+  color: #606060;
+  font-size: 1.1rem;
+  font-weight: 200; }
+
+.project__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.project__links a:first-child {
+  margin-right: 1.5rem; }
+
+.project__links a button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: #000;
+  border: 1px solid #000;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .project__links a button:hover {
+    color: #fff;
+    background-color: #000;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02); }
 
 #skills {
   background-color: #fff;
@@ -689,15 +767,26 @@ span {
 .contact__info {
   padding-right: 5rem; }
 
+.contact__info--main {
+  padding-bottom: 1.5rem; }
+
 .contact__info--main h3, .contact__info--location h3 {
   font-size: 1.15rem;
-  font-weight: 400;
-  padding-bottom: 1.5rem; }
+  font-weight: 400; }
 
 .contact__info--main p, .contact__info--location p {
   font-size: 1 rem;
-  font-weight: 200;
+  font-weight: 200; }
+
+.contact__info--location {
   padding-bottom: 2rem; }
+
+.contact__icons i {
+  padding-right: 1.1875rem;
+  color: #c7c7c7;
+  cursor: pointer; }
+  .contact__icons i:hover {
+    color: #000; }
 
 .contact__form {
   display: -webkit-box;
@@ -725,7 +814,8 @@ form {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding-bottom: 4.5rem; }
 
 textarea {
   resize: none; }
@@ -762,7 +852,35 @@ textarea:focus, input:focus {
 
 .contact__btn {
   width: 100%;
-  background: none; }
+  background: none;
+  border: none;
+  color: #fff;
+  background-color: #c6aa82;
+  height: 2rem;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .contact__btn:hover {
+    background-color: #000; }
+
+footer {
+  background-color: #f5f5f5;
+  height: 6rem;
+  text-align: center;
+  position: relative; }
+
+footer h3 {
+  margin: 0;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 html, body {
   height: 100%;
