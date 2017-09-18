@@ -172,8 +172,14 @@
     bottom: 0;
     color: #fff;
     padding-bottom: 2rem;
+    text-decoration: none;
 }
 
 .icons i {
     padding-right: 0.875rem;
+}
+
+
+.icons a:visited {
+	color: #fff;
 }

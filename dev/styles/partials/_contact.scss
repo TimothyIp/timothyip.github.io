@@ -104,6 +104,8 @@ input::placeholder, textarea::placeholder {
 
 textarea:focus, input:focus{
     outline: none;
+    border-bottom: 1px solid $accent-color;
+    transition: all 0.2s ease-in;
 }
 
 .contact__name, .contact__email {

@@ -3,11 +3,20 @@
 var app = {};
 
 app.events = function () {
-	$(".whopper").click(function () {
-		console.log("clicked");
+	$(".menu").click(function () {
 		$(".one").toggleClass("one-ani");
 		$(".two").toggleClass("two-ani");
-		$('.drawer').toggleClass('drawer__closed');
+		$(".drawer").toggleClass("drawer__slide");
+	});
+
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 100) {
+			$('.navbar').addClass('sticky');
+			$(".bar").css('background-color', '#000');
+		} else {
+			$('.navbar').removeClass('sticky');
+			$(".bar").css('background-color', '#fff');
+		}
 	});
 };
 
@@ -42,6 +51,7 @@ app.init = function () {
 $(function () {
 	// app.googleMaps();
 	app.init();
+	var scroll = new SmoothScroll('a[href*="#"]');
 	setTimeout(function () {
 		$(".loading__container").fadeOut("slow");
 	}, 1600);

@@ -1,12 +1,22 @@
 const app = {};
 
 app.events = () => {
-	$(".whopper").click(() => {
-		console.log("clicked")
+	$(".menu").click(() => {
 		$(".one").toggleClass("one-ani");
 		$(".two").toggleClass("two-ani");
-		$('.drawer').toggleClass('drawer__closed');
+		$(".drawer").toggleClass("drawer__slide")
+		
 	})
+
+	$(window).scroll(function() {
+			if ($(window).scrollTop() > 100) {
+				$('.navbar').addClass('sticky');
+				$(".bar").css('background-color', '#000');
+			} else {
+				$('.navbar').removeClass('sticky');
+				$(".bar").css('background-color', '#fff');
+			}
+		});
 }
 
 app.introAnim = () => {
@@ -45,6 +55,7 @@ app.init = () => {
 $(function () {
 	// app.googleMaps();
 	app.init();
+	var scroll = new SmoothScroll('a[href*="#"]')
 	setTimeout(() => {
 		$(".loading__container").fadeOut("slow");
 	}, 1600)

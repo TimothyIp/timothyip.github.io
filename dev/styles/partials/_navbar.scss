@@ -8,6 +8,20 @@
     font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: 200;
+    transition: all 0.3s ease-in;
+}
+
+
+.sticky {
+  background-color: #fff;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  color: #000;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.sticky__menu {
+  background-color: #000;
 }
 
 .navbar .wrapper {
@@ -33,6 +47,7 @@ span {
   height           : 32px;
   width            : 50px;
   padding-left: 1.125rem;
+  cursor: pointer;
 }
 
 .bar {
@@ -44,7 +59,7 @@ span {
 }
 .one { top         : 10px; }
 .two { top         : 20px; }
-.whopper:hover .one, .whopper:hover .two {
+.menu:hover .one, .menu:hover .two {
   background-color : gray;
 }
 .one-ani {
@@ -56,4 +71,69 @@ span {
   transform        : rotate(-45deg);
   top              : 15px;
   transition       : all .25s;
+}
+
+.drawer {
+  position: fixed;
+  height: 100vh;
+  width: 50%;
+  max-width: 44.6875rem;
+  background-color: #fff;
+  z-index: 1000;
+  padding-top: 1.75rem;
+  padding-right: 2.5rem;
+  transform: translateX(-100%);
+  transition: all 0.25s ease-in;
+  overflow: hidden;
+}
+
+.drawer a {
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.drawer__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.drawer__header h1 {
+  padding-left: 3.6875rem;
+}
+
+.drawer__menu .bar {
+  background-color: #000;
+}
+
+.drawer__main {
+  padding-left: 10.3125rem;
+  padding-top: 10.5rem;
+}
+
+.drawer__main div {
+  padding-bottom: 1.75rem;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.drawer__icons {
+  padding-left: 3.6875rem;
+}
+
+.drawer__icons i {
+  color: #000;
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.drawer__slide {
+  transform: translateX(0%);
+  opacity: 0.98;
 }
