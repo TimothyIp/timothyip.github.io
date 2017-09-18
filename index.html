@@ -22,14 +22,12 @@
 		<div class="wrapper">
 			<div class="container">
 				<div class="logo">TIMOTHY</div>
-
-			</div>
-			<a class="whopper" href="#">
-				<div class="menu">
-					<div class="bar one"></div>
-					<div class="bar two"></div>
-				</div>
-			</a>
+				<a class="whopper" href="#">
+					<div class="menu">
+						<div class="bar one"></div>
+						<div class="bar two"></div>
+					</div>
+				</a>
 		</div>
 	</nav>
 	<div class="fullscreen-bg">
@@ -62,14 +60,12 @@
 						About
 					</h2>
 
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius tempore aliquid at vero. In blanditiis enim,
-						perferendis distinctio ducimus corrupti quia nostrum ex atque tempore facere recusandae aliquid laboriosam?Lorem ipsum
-						dolor sit amet consectetur adipisicing elit. Laudantium earum commodi quod reiciendis odio tempore unde beatae temporibus!
-						Quae praesentium autem dicta vitae repudiandae doloribus odit harum dolorem mollitia velit?</p>
-
+					<p>Hi! I'm Timothy,<br>
+						I'm a Front-End Developer with an eye for design based in Toronto, Canada. I enjoy tackling challenging problems, solving puzzles, and tinkering of things. I like to make and break things to see how they work. When I'm not coding, you can find me out in the wild either rock climbing, golfing, or hanging out with friends.   
+					</p>
 				</div>
 			</div>
-			<p class="signature">SIGNATURE HERE</p>
+			<p class="signature"><img src="/public/assets/signature.png" alt=""></p>
 		</div>
 	</section>
 
@@ -252,18 +248,24 @@
 			</div>
 			<div class="blog__container">
 				<div class="blog__piece">
-					<img src="https://unsplash.it/269/378" alt="">
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id nam animi sit cupiditate voluptas iusto repudiandae quo nobis
-						corrupti fugiat voluptatibus aperiam porro placeat, quas culpa consequatur quis dicta ad!
-					</p>
+					<img src="/public/assets/blog_pic.png" alt="">
+					<div>
+						<a target="_blank" href="https://medium.com/@timothy.ip4/when-in-doubt-just-golden-ratio-it-54c611e5603b">
+							<p>
+								Leveraging the Golden Ratio in Web Design <br>
+							</p>
+						</a>
+						<div class="blog__author">By Timothy</div>
+					</div>
 				</div>
 				<div class="blog__piece">
 					<img src="https://unsplash.it/269/378" alt="">
-					<p>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id nam animi sit cupiditate voluptas iusto repudiandae quo nobis
-						corrupti fugiat voluptatibus aperiam porro placeat, quas culpa consequatur quis dicta ad!
-					</p>
+					<div>
+						<p>
+							Blog Post Title
+						</p>
+						<div class="blog__author">By Timothy</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -282,13 +284,11 @@
 				<div class="contact__info">
 					<div class="contact__info--main">
 						<h3>CONTACT INFORMATION</h3>
-						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea eaque obcaecati commodi consectetur nesciunt repudiandae
-							molestiae hic sed sit odit aspernatur doloremque, laboriosam, itaque harum neque consequatur. Vitae, ad nemo.</p>
 					</div>
 					<div class="contact__info--location">
-						<h3>116 Holborne Ave, M4C 2R4 - TORONTO ON - CANADA</h3>
+						<p>116 Holborne Ave, M4C 2R4 - Toronto, On - Canada</h3>
 						<p>Tel. 416-302-8366</p>
-						<p>Email. timothy.ip4@gmail.com</p>
+						<p>Email. contact@timothy-ip.com</p>
 					</div>
 					<div class="contact__icons">
 						<i class="fa fa-facebook" aria-hidden="true"></i>
@@ -299,11 +299,12 @@
 				</div>
 				<div class="contact__form">
 					<h2>GET IN TOUCH</h2>
-					<form>
-						<input class="contact__name" type="text" placeholder="Name">
-						<input class="contact__email" type="text" placeholder="Email">
-						<input class="contact__subject" type="text" placeholder="Subject">
-						<textarea class="contact__message" cols="80" rows="7" placeholder="Message" aria-label="Message"></textarea>
+					<form action="https://formspree.io/contact@timothy-ip.com"
+      method="POST">
+						<input name="name" class="contact__name" type="text" placeholder="Name" required>
+						<input name="email" class="contact__email" type="text" placeholder="Email" required>
+						<input name="_subject" class="contact__subject" type="text" placeholder="Subject">
+						<textarea name="message" class="contact__message" cols="80" rows="7" placeholder="Message" aria-label="Message" required></textarea>
 						<button class="contact__btn" type="submit">SEND</button>
 					</form>
 				</div>

@@ -5,6 +5,7 @@ app.events = () => {
 		console.log("clicked")
 		$(".one").toggleClass("one-ani");
 		$(".two").toggleClass("two-ani");
+		$('.drawer').toggleClass('drawer__closed');
 	})
 }
 

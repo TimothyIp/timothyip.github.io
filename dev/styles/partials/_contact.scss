@@ -37,7 +37,7 @@
 }
 
 .contact__info--main {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
 }
 
 .contact__info--main h3, .contact__info--location h3 {
@@ -46,7 +46,6 @@
 }
 
 .contact__info--main p, .contact__info--location p {
-    font-size: 1 rem;
     font-weight: 200;
 }
 
@@ -142,6 +141,7 @@ footer {
 
 footer h3 {
     margin: 0;
+    font-size: 0.95rem;
     font-weight: 200;
     position: absolute;
     top: 50%;
