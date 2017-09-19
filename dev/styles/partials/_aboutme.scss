@@ -62,3 +62,64 @@
     padding-top: 13rem;
 }
 
+@media (max-width: 1170px) {
+    .about__container {
+        flex-direction: column;
+    }
+
+    .parallax {
+        width: 100%;
+        background-position: initial;
+        margin: 0 auto;
+        background-origin: left center;
+        flex: 1 1 18.75rem;
+        margin-bottom: 8rem;
+    }
+
+    .about__info {
+        margin: 0;
+    }
+
+    .about__info p {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: justify;
+        position: relative;
+        top: 5rem;
+        padding-top: 5rem;
+    }
+
+    .about__info h2 {
+        display: none;
+    }
+
+    .signature {
+       padding-top: 4rem;
+       text-align: center;
+    }
+}
+
+@media (max-width: 325px) {
+
+    .parallax {
+       background-attachment: scroll;
+       width: 100%;
+    }
+
+    .about__info p {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 24px;
+        font-size:4.5vw;
+    }
+    .signature {
+        display: none;
+    }
+}
+
+
+

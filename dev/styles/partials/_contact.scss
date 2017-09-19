@@ -2,8 +2,10 @@
     background: url('/public/assets/contactmap.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: left center;
     height: 550px;
     max-width: 100%;
+    width: 100%;
 }
 
 #contact {
@@ -81,6 +83,7 @@ form {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 4.5rem;
+    width: 100%;
 }
 
 textarea {
@@ -149,4 +152,44 @@ footer h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+
+@media (max-width: 1170px) {
+    .contact__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact__info {
+        padding: 0;
+    }
+
+    .contact__form {
+        padding-top: 2rem;
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .contact__info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    form {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contact__name, .contact__email {
+        width: 100%;
+    }
 }

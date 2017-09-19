@@ -1,6 +1,7 @@
 #skills {
     background-color: #fff;
-    padding-top: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 4.5rem;
 }
 
 .skills__container {
@@ -43,4 +44,21 @@
 
 .skill__icons p {
     padding-top: 1rem;
+}
+
+@media (max-width: 790px) {
+    .skills__container {
+        flex-wrap: wrap;
+    }
+
+    .skill__icons {
+        padding-bottom: 2rem;
+        width: 20%;
+    }
+}
+
+@media (max-width: 400px) {
+    .skill__icons {
+        width: 50%;
+    }
 }

@@ -6,7 +6,7 @@
 @import "partials/aboutme";
 @import "partials/portfolio";
 @import "partials/skills";
-@import "partials/blog";
+// @import "partials/blog"; Blog coming soon
 @import "partials/contact";
 
 // REMOVE UNUSED FONT-WEIGHT
@@ -36,7 +36,17 @@ html, body {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+a {
+	color: inherit;
+}
 
 a:visited {
 	color: #000;
+}
+
+@media (max-width: 1800px) {
+	.wrapper {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
 }

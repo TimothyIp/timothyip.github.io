@@ -4,19 +4,18 @@ app.events = () => {
 	$(".menu").click(() => {
 		$(".one").toggleClass("one-ani");
 		$(".two").toggleClass("two-ani");
-		$(".drawer").toggleClass("drawer__slide")
-		
+		$(".drawer").toggleClass("drawer__slide");
 	})
 
-	$(window).scroll(function() {
-			if ($(window).scrollTop() > 100) {
-				$('.navbar').addClass('sticky');
-				$(".bar").css('background-color', '#000');
-			} else {
-				$('.navbar').removeClass('sticky');
-				$(".bar").css('background-color', '#fff');
-			}
-		});
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 1) {
+			$('.navbar').addClass('sticky');
+			$(".top .bar").css('background-color', '#000');
+		} else {
+			$('.navbar').removeClass('sticky');
+			$(".top .bar").css('background-color', '#fff');
+		}
+	});
 }
 
 app.introAnim = () => {
@@ -53,7 +52,6 @@ app.init = () => {
 
 
 $(function () {
-	// app.googleMaps();
 	app.init();
 	var scroll = new SmoothScroll('a[href*="#"]')
 	setTimeout(() => {

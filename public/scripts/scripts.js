@@ -10,12 +10,12 @@ app.events = function () {
 	});
 
 	$(window).scroll(function () {
-		if ($(window).scrollTop() > 100) {
+		if ($(window).scrollTop() > 1) {
 			$('.navbar').addClass('sticky');
-			$(".bar").css('background-color', '#000');
+			$(".top .bar").css('background-color', '#000');
 		} else {
 			$('.navbar').removeClass('sticky');
-			$(".bar").css('background-color', '#fff');
+			$(".top .bar").css('background-color', '#fff');
 		}
 	});
 };
@@ -49,7 +49,6 @@ app.init = function () {
 };
 
 $(function () {
-	// app.googleMaps();
 	app.init();
 	var scroll = new SmoothScroll('a[href*="#"]');
 	setTimeout(function () {
