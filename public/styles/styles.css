@@ -384,6 +384,7 @@ span {
 
 .loading__container {
   position: absolute;
+  display: none;
   height: 100vh;
   width: 100vw;
   background-color: #000;
@@ -500,7 +501,11 @@ span {
 
 @media (max-width: 570px) {
   .drawer {
-    width: 100vw; } }
+    width: 100vw; }
+  .loading__container {
+    display: none; }
+  #intro {
+    background: rgba(0, 0, 0, 0.75); } }
 
 .fullscreen-bg {
   position: relative;
@@ -631,10 +636,17 @@ span {
     padding-top: 4rem;
     text-align: center; } }
 
+@media (max-width: 500px) {
+  .parallax {
+    background-attachment: scroll;
+    width: 85%;
+    -webkit-filter: none;
+            filter: none; } }
+
 @media (max-width: 325px) {
   .parallax {
     background-attachment: scroll;
-    width: 100%; }
+    width: 85%; }
   .about__info p {
     padding-top: 3rem;
     padding-left: 1rem;
@@ -1074,6 +1086,10 @@ footer h3 {
     margin: 0 auto; }
   .contact__name, .contact__email {
     width: 100%; } }
+
+@media (max-width: 500px) {
+  #google__map {
+    display: none; } }
 
 * {
   -webkit-font-smoothing: antialiased;

@@ -102,11 +102,18 @@
     }
 }
 
+@media (max-width: 500px) {
+    .parallax {
+        background-attachment: scroll;
+        width: 85%;
+        filter: none;
+     }
+}
 @media (max-width: 325px) {
 
     .parallax {
        background-attachment: scroll;
-       width: 100%;
+       width: 85%;
     }
 
     .about__info p {
