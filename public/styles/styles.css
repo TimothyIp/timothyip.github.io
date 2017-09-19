@@ -143,7 +143,7 @@ h1, p {
   font-size: 1.5rem;
   letter-spacing: 2px;
   font-weight: 200;
-  opacity: 0.95;
+  opacity: 1;
   -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in; }
 
@@ -384,7 +384,6 @@ span {
 
 .loading__container {
   position: absolute;
-  display: none;
   height: 100vh;
   width: 100vw;
   background-color: #000;
@@ -502,10 +501,8 @@ span {
 @media (max-width: 570px) {
   .drawer {
     width: 100vw; }
-  .loading__container {
-    display: none; }
-  #intro {
-    background: rgba(0, 0, 0, 0.75); } }
+  body .fullscreen-bg #intro {
+    background: none !important; } }
 
 .fullscreen-bg {
   position: relative;
@@ -684,7 +681,7 @@ span {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  padding-bottom: 4.5rem; }
+  padding-bottom: 9rem; }
 
 .portfolio__image {
   width: 50%; }
@@ -693,8 +690,8 @@ span {
   width: 100%;
   height: auto;
   border-radius: 14px;
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.15);
   font-size: 0; }
 
 .portfolio__info {
@@ -875,7 +872,9 @@ span {
 .skill__icons {
   font-family: 'Merriweather', serif;
   text-align: center;
-  color: #959595; }
+  color: #959595;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem; }
 
 .skill__icons:hover i {
   color: #c6aa82; }
