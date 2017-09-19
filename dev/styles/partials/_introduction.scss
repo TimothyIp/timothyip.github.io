@@ -179,12 +179,19 @@
     padding-right: 0.875rem;
 }
 
+.icons i:hover {
+  color: $accent-color;
+}
+
 
 .icons a:visited {
 	color: #fff;
 }
 
-@media (max-height: 500px) {
+
+
+
+@media (max-height: 516px) {
   .intro__container {
     height: 19rem;
   }

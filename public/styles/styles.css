@@ -483,10 +483,13 @@ span {
 .icons i {
   padding-right: 0.875rem; }
 
+.icons i:hover {
+  color: #c6aa82; }
+
 .icons a:visited {
   color: #fff; }
 
-@media (max-height: 500px) {
+@media (max-height: 516px) {
   .intro__container {
     height: 19rem; } }
 
