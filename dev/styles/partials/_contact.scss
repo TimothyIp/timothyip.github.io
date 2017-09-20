@@ -15,6 +15,7 @@
 .contact__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .contact__intro {
@@ -42,6 +43,10 @@
     padding-bottom: 1rem;
 }
 
+.contact__info--main h3 {
+    margin: 0;
+}
+
 .contact__info--main h3, .contact__info--location h3 {
     font-size: 1.15rem;
     font-weight: 400;
@@ -58,6 +63,7 @@
 .contact__icons i {
     padding-right: 1.1875rem;
     font-size: 1.25rem;
+    padding-bottom: 2rem;
     color: #000;
     cursor: pointer;
     &:hover {
@@ -166,27 +172,36 @@ footer h3 {
         padding: 0;
     }
 
+    #skills .inner__wrapper {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #contact .inner__wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
     .contact__form {
         padding-top: 2rem;
         margin: 0 auto;
         display: flex;
         width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        // padding-left: 2rem;
+        // padding-right: 2rem;
         flex-direction: column;
+    }
+
+    .contact__form h2 {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 700px) {
 
-    .contact__info {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
     form {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        // padding-left: 1rem;
+        // padding-right: 1rem;
         width: 100%;
         margin: 0 auto;
     }

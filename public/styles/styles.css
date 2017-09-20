@@ -662,7 +662,7 @@ span {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 5rem; }
+  padding-bottom: 6.9rem; }
 
 .portfolio__intro h1 {
   display: inline-block;
@@ -824,9 +824,11 @@ span {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; } }
 
-@media (max-width: 340px) {
+@media (max-width: 450px) {
   .portfolio__info p {
-    text-align: justify; }
+    text-align: justify; } }
+
+@media (max-width: 340px) {
   .project__links {
     text-align: center;
     -webkit-box-orient: vertical;
@@ -917,7 +919,10 @@ span {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .contact__intro {
   width: 100%;
@@ -940,6 +945,9 @@ span {
 .contact__info--main {
   padding-bottom: 1rem; }
 
+.contact__info--main h3 {
+  margin: 0; }
+
 .contact__info--main h3, .contact__info--location h3 {
   font-size: 1.15rem;
   font-weight: 400; }
@@ -953,6 +961,7 @@ span {
 .contact__icons i {
   padding-right: 1.1875rem;
   font-size: 1.25rem;
+  padding-bottom: 2rem;
   color: #000;
   cursor: pointer; }
   .contact__icons i:hover {
@@ -1062,6 +1071,12 @@ footer h3 {
     text-align: center; }
   .contact__info {
     padding: 0; }
+  #skills .inner__wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+  #contact .inner__wrapper {
+    padding-left: 2rem;
+    padding-right: 2rem; }
   .contact__form {
     padding-top: 2rem;
     margin: 0 auto;
@@ -1069,20 +1084,15 @@ footer h3 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  .contact__form h2 {
+    font-size: 1.5rem; } }
 
 @media (max-width: 700px) {
-  .contact__info {
-    padding-left: 1rem;
-    padding-right: 1rem; }
   form {
-    padding-left: 1rem;
-    padding-right: 1rem;
     width: 100%;
     margin: 0 auto; }
   .contact__name, .contact__email {
