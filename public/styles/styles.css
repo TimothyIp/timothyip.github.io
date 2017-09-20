@@ -202,10 +202,10 @@ span {
   position: relative; }
 
 .one {
-  top: 10px; }
+  top: 11px; }
 
 .two {
-  top: 20px; }
+  top: 21px; }
 
 .menu:hover .one, .menu:hover .two {
   background-color: gray; }
@@ -283,7 +283,8 @@ span {
   padding-left: 3.6875rem; }
 
 .drawer__icons i {
-  color: #000; }
+  color: #000;
+  font-size: 1.25rem; }
   .drawer__icons i:hover {
     color: #c6aa82; }
 
@@ -477,6 +478,7 @@ span {
   position: absolute;
   bottom: 0;
   color: #fff;
+  font-size: 1.25rem;
   padding-bottom: 2rem;
   text-decoration: none; }
 
@@ -518,10 +520,6 @@ span {
 
 .fullscreen-bg__video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: auto;
   height: auto;
   min-width: 100%;
@@ -954,10 +952,11 @@ span {
 
 .contact__icons i {
   padding-right: 1.1875rem;
-  color: #c7c7c7;
+  font-size: 1.25rem;
+  color: #000;
   cursor: pointer; }
   .contact__icons i:hover {
-    color: #000; }
+    color: #c6aa82; }
 
 .contact__form {
   display: -webkit-box;

@@ -58,8 +58,8 @@ span {
   transition       : all .25s;
   position         : relative;
 }
-.one { top         : 10px; }
-.two { top         : 20px; }
+.one { top         : 11px; }
+.two { top         : 21px; }
 .menu:hover .one, .menu:hover .two {
   background-color : gray;
 }
@@ -133,6 +133,7 @@ span {
 
 .drawer__icons i {
   color: #000;
+  font-size: 1.25rem;
   &:hover {
     color: $accent-color;
   }

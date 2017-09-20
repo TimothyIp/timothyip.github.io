@@ -57,10 +57,11 @@
 
 .contact__icons i {
     padding-right: 1.1875rem;
-    color: #c7c7c7;
+    font-size: 1.25rem;
+    color: #000;
     cursor: pointer;
     &:hover {
-        color: #000;
+        color: $accent-color;
     }
 }
 
