@@ -554,7 +554,7 @@ span {
       flex-wrap: wrap; }
 
 .parallax {
-  background-image: url("/public/assets/bio_picture.jpg");
+  background-image: url("../assets/bio_picture.jpg");
   height: 270px;
   width: 600px;
   max-width: 600px;
@@ -905,7 +905,7 @@ span {
     width: 50%; } }
 
 #google__map {
-  background: url("/public/assets/contactmap.png");
+  background: url("../assets/contactmap.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;

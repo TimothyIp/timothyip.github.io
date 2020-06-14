@@ -37,7 +37,7 @@ app.introAnim = () => {
 	setTimeout(() => {
 		// $("video").fadeOut("slow");
 		$("video").css("opacity", 0);
-		$("#intro").fadeIn("slow").css("background", "linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('/public/assets/2212.jpeg')")
+		$("#intro").fadeIn("slow").css("background", "linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),url('public/assets/2212.jpeg')")
 	}, 13600)
 
 
